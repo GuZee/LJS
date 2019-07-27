@@ -1,10 +1,8 @@
-body {
-    background-color: lightblue;
-}
-
 .player {
     width: 380px;
+    height: 648px;
     margin: auto;
+    background: lightblue;
 }
 
 #id-div-musicName {
@@ -21,7 +19,10 @@ body {
 }
 
 .img-cover {
-    padding: 10px 0 0 10px;
+    padding: 15px 0 0;
+}
+#id-div-cover {
+    text-align: center;
 }
 #id-div-control {
     width: 380px;
@@ -140,7 +141,7 @@ input[type=range] {
 }
 #id-img-volume {
     left: 52%;
-    top: 545px;
+    top: 550px;
     margin: 10px 0;
     position: absolute;
     transform: rotate(0deg);
@@ -148,7 +149,7 @@ input[type=range] {
 
 input[type=range]#id-input-volume {
     left: 52%;
-    top: 575px;
+    top: 580px;
     width: 10%;
     opacity: 0;
     -webkit-transform: rotate(90deg);
