@@ -1,0 +1,205 @@
+body {
+    background-color: lightblue;
+}
+
+.player {
+    width: 380px;
+    margin: auto;
+}
+
+#id-div-musicName {
+    margin: 0 auto;
+    text-align: center;
+}
+.time {
+    padding: 10px;
+    margin-bottom: 30px;
+    display: inline-block;
+}
+.img-com {
+    margin: 5px;
+}
+
+.img-cover {
+    padding: 10px 0 0 10px;
+}
+#id-div-control {
+    width: 380px;
+    height: 34px;
+}
+.hCenter {
+    margin: auto 0;
+}
+
+.playMode {
+    margin-left: 150px;
+}
+.imgMode {
+    display: none;
+}
+
+.hideimage {
+    display: none;
+}
+
+.showimage {
+    display: inline;
+}
+
+button,
+ol {
+    background-color: lightblue;
+    border: none;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+/* 播放列表 */
+#id-div-music {
+    padding-left: 20px;
+    margin: 20px;
+}
+
+ol {
+    display: none;
+}
+li{
+    margin: 5px;
+}
+li:hover{
+    background: aqua;
+}
+.ol-musicList {
+    display: block;
+    position: absolute;
+    top: calc(15px);
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 16px;
+    opacity: 0.9;
+    background: beige;
+    width: 340px;
+    height: 500px;
+    text-align: center;
+    box-shadow: 0 -2px 3px rgba(0, 0, 0, 0.15);
+    overflow-y: visible;
+    transition: top 0.5s cubic-bezier(0.4, 0, 0.2, 1),left 0.5s;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    width: 200px;
+    border-radius: 10px; 
+    /* 这个属性设置使填充进度条时的图形为圆角 */
+    background: -webkit-linear-gradient(#059CFA, #059CFA) no-repeat;
+    background-size: 0% 100%;
+}
+input[type=range]::-webkit-slider-runnable-track {
+    height: 15px;
+    border-radius: 10px;
+    /* 将轨道设为圆角的 */
+    box-shadow: 0 1px 1px #def3f8, inset 0 .125em .125em #0d1112;
+    /* 轨道内置阴影效果 */
+}
+input[type=range]:focus {
+    outline: none;
+}
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 25px;
+    width: 25px;
+    margin-top: -5px;
+    /* 使滑块超出轨道部分的偏移量相等 */
+    background: #ffffff;
+    border-radius: 50%;
+    /* 外观设置为圆形 */
+    border: solid 0.125em rgba(205, 224, 230, 0.5);
+    /* 设置边框 */
+    box-shadow: 0 .125em .125em #3b4547;
+    /* 添加底部阴影 */
+
+    background: linear-gradient(#059CFA, #059CFA) no-repeat;
+
+}
+input[type=range] {
+    -webkit-appearance: none;
+    margin: 0;
+    opacity: 1;
+    padding: 10px 0;
+    position: absolute;
+    -webkit-transform-origin: 0 0 0;
+    transform-origin: 0 0 0;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    width: 360px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 520px;
+}
+#id-img-volume {
+    left: 52%;
+    top: 545px;
+    margin: 10px 0;
+    position: absolute;
+    transform: rotate(0deg);
+}
+
+input[type=range]#id-input-volume {
+    left: 52%;
+    top: 575px;
+    width: 10%;
+    opacity: 0;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(-90deg);
+}
+
+input[type=range]#buffer {
+    left: 0;
+    bottom: calc(100% + 10px);
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    animation: 0.3s;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 1em;
+    cursor: pointer;
+    height: 10px;
+    width: 100%;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: #999;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+    border-radius: 100%;
+    cursor: pointer;
+    height: 16px;
+    margin-top: -3px;
+    width: 16px;
+}
+
+input[type=range]::-moz-range-track {
+    animation: 0.3s;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 1em;
+    cursor: pointer;
+    height: 10px;
+    width: 100%;
+}
+
+input[type=range]::-moz-range-thumb {
+    background: #999;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+    border-radius: 100%;
+    cursor: pointer;
+    height: 16px;
+    width: 16px;
+}
+
+input[type=range]:focus,
+.overlay:hover~input[type=range],
+input[type=range]#id-input-volume:hover {
+    opacity: 1;
+}
