@@ -25,7 +25,7 @@ var ensureArray = function (a, b) {
     return true
 }
 
-// 注意, 要自行实现 ensureArrayEquals 来判断两个数组是否相等
+
 // 定义一个函数 ensureArrayEquals 判断两个数组是否相等， 返回 Boolean 值
 var ensureArrayEquals = function (arr1, arr2) {
     if (arr1.length != arr2.length) {
